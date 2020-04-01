@@ -94,7 +94,7 @@ var $banner = (function() {
                     if(!cfg.isSliding){
                         cfg.page = j;
                         var str = -1200*(cfg.page+1) + 'px';
-                        $slider.css('left',str);
+                        $slider.stop().animate({'left':str},500);
                         navList(cfg.page+1);
                     }
 				}
